@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+<div class="container " id="contain">
+        <div class="row justify-content-center">
+            <div class="col col-12 ygadai">
+                <h3>Угадайка</h3>
+            </div>
+        </div>
+        <div id="firstContent"></div>
+        <div class="row justify-content-center">
+            <div class="col col-12">
+                <div class="row cent">
+                    <div class="col-4">
+                    <label for="inputPassword6" class="col-form-label">Минимальное число:</label>
+                    </div>
+                    <div class="col-4">
+                    <input type="number" id="inputMin" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-4">
+                    <span id="inputHelp" class="form-text">
+                        (не меньше -999)
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row justify-content-center">
+                <div class="col col-12">
+                    <div class="row cent">
+                        <div class="col-4">
+                        <label for="inputPassword6" class="col-form-label">Максимальное число:</label>
+                        </div>
+                        <div class="col-4">
+                        <input type="number" id="inputMax" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-4">
+                        <span id="inputHelp" class="form-text">
+                            (не больше 999)
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-auto">
+                    <button type="button" class="btn btn-dark" id="btnInter">Ввести</button>
+                </div>
+            </div>
+        <div id="lastContent">
+            <div class="row justify-content-center">
+                <div class="col col-auto">
+                    <h3 id="answerField">Введите числа</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-2 col-btn">
+                    <button type="button" class="btn btn-primary" id="btnLess">Меньше</button>
+                </div>
+                <div class="col col-2 col-btn">
+                    <button type="button" class="btn btn-success" id="btnEqual">Нашел</button>
+                </div>
+                <div class="col col-2 col-btn">
+                    <button type="button" class="btn btn-primary" id="btnOver">Больше</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-auto">
+                    <span id="btnRetry">Заново</span>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
